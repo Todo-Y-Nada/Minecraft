@@ -1,0 +1,145 @@
+:root {
+  --bg: #f0f0f0;
+  --text: #333;
+  --card: #fff;
+  --primary: #0077cc;
+  --secondary: #005fa3;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #ddd;
+  --card: #1e1e1e;
+  --primary: #00b4ff;
+  --secondary: #006c9b;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  transition: 0.3s ease background, color;
+}
+
+.menu-toggle, .toggle-theme {
+  position: fixed;
+  top: 15px;
+  padding: 8px 12px;
+  font-size: 16px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle { left: 15px; }
+.toggle-theme { right: 15px; }
+
+nav {
+  width: 220px;
+  background: #222;
+  color: white;
+  padding-top: 30px;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: -220px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+nav.active {
+  left: 0;
+}
+
+nav h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+nav ul li:hover {
+  background: #333;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px 40px;
+  transition: 0.3s;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post {
+  background: var(--card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.post:hover {
+  transform: translateY(-3px);
+}
+
+.category {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 30px 0 10px;
+  color: #666;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  margin: 0 5px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+}

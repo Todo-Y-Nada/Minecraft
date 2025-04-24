@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Archivos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <button class="toggle-theme" onclick="toggleTheme()">Modo Oscuro</button>
+
+  <nav id="sidebar">
+    <h2>Archivos</h2>
+    <ul>
+      <li onclick="scrollToSection('inicio')">Inicio</li>
+      <li onclick="scrollToSection('sobremi')">Sobre mí</li>
+      <li onclick="scrollToSection('contacto')">Contacto</li>
+      <li onclick="window.location.href='blog.html'">Archivo del Blog</li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <header id="inicio">
+      <h1>Archivos</h1>
+      <p>Aquí encontrarás todas mis publicaciones organizadas por fecha y Archivos.</p>
+    </header>
+
+    <div id="allPosts"></div>
+
+    <footer>
+      © 2025 Todo Y Nada. Todos los derechos reservados.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
