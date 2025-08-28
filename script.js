@@ -1,7 +1,7 @@
 const posts = [
-  { title: "Minecraft PE Server", text: "Proximamente (En desarrollo)", category: "Historias", views: 100 },
+  { title: "Proyectos", text: "Proximamente (En desarrollo)", category: "Historias", views: 100 },
   { title: "Proximos Proyectos", text: "Hare un juego estilo 2d multiplayer", category: "Historias", views: 96 },
-  { title: "Donde Hago mis servers", text: "Por lo general utilizo Aternos, aunque he llegado a utilizar otros.", category: "Tecnología", views: 95 },
+  { title: "Donde Hago mis servers", text: "Por lo general utilizo Diferentes Formas, aunque he llegado a utilizar otros como Google.", category: "Tecnología", views: 95 },
   { title: "Nada en Especial", text: "A veces necesitamos parar y respirar...", category: "Personal", views: 94 },
   { title: "La vida es Buena", text: "Solo hay que verla con buenos ojos.", category: "Personal", views: 90 },
   { title: "No mi casa tio!", text: "Una frase iconica.", category: "Meme", views: 40 },
